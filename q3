@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int n,a,b,count=0;
+    printf("enter the upper bound: ");
+    scanf("%d",&n);
+    printf("enter the numbers to check for divisibility: ");
+    scanf("%d%d",&a,&b);
+    for(int i=1;i<=n;i++){
+        if((i%a==0)||(i%b==0)) count++;
+    }
+    printf("The number of numbers divisible by %d or %d from 1 to %d inclusive are: %d",a,b,n,count);
+    return 0;
+}
